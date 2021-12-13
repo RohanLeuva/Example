@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: example-pod
+  labels:
+    name: exampleAppPod
+    app: demoApp
+spec:
+  containers:
+  -name: exampleApp
+   image: docker pull docker pull dockersamples/vote
+  ports:
+  -containerPort: 80
